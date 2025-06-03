@@ -468,7 +468,7 @@ if uploaded_file:
         "แดชบอร์ดสรุปภาพรวม",
         "ภาพรวม Risk Matrix & Top 10",
         "กราฟสรุปอุบัติการณ์ (รายมิติ)",
-        "ความสัมพันธ์รหัส-หมวดหมู่ (Scatter Plot)",
+        "ความสัมพันธ์รหัส-หมวดหมู่",
         "วิเคราะห์ตามหมวดหมู่ PSG9",
         "วิเคราะห์อุบัติการณ์ที่ต้องดำเนินการแก้ไข",
         "รายการ Sentinel Events",
@@ -648,7 +648,7 @@ if uploaded_file:
             else:
                 st.warning("No 'ชนิดสถานที่' data for chart.")
 
-    elif selected_analysis == "ความสัมพันธ์รหัส-หมวดหมู่ (Scatter Plot)":
+    elif selected_analysis == "ความสัมพันธ์รหัส-หมวดหมู่":
         st.subheader("ความสัมพันธ์ระหว่างรหัสอุบัติการณ์และหมวดหมู่ (Scatter Plot)")
         scatter_cols = ['รหัส', 'หมวด', 'Category Color', 'Incident Rate/mth']
         if all(col in df.columns for col in scatter_cols):
